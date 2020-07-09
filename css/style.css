@@ -307,8 +307,6 @@ body {
 
 .main__info-photos {
   max-width: 405px;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .main .slick-slider {
@@ -361,8 +359,187 @@ body {
 }
 
 .main__doctor {
-  border: 1px solid red;
+  margin-top: 30px;
   height: 100px;
+}
+
+.main__doctor-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__doctor-title h3 {
+  color: #16395b;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.main__doctor-title p {
+  color: #06cf9a;
+  text-transform: uppercase;
+}
+
+.main__doctor-card {
+  border: 1px solid lightblue;
+  border-radius: 6px;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.main__doctor-card__header {
+  margin-top: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main__doctor-card__header-btn {
+  position: absolute;
+  border-radius: 50%;
+  top: -5px;
+  width: 35px;
+  height: 35px;
+  left: 15px;
+  background-image: url(../images/heart.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+  -webkit-box-shadow: 0 2px 8px -4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 8px -4px rgba(0, 0, 0, 0.5);
+}
+
+.main__doctor-card__header-info {
+  margin-top: -5px;
+  margin-right: 20px;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.main__doctor-card__header-info h4 {
+  font-size: 18px;
+  max-width: 135px;
+  margin-bottom: 8px;
+}
+
+.main__doctor-card__header-info p {
+  max-width: 215px;
+  color: #0943bf;
+  font-size: 14px;
+}
+
+.main__doctor-card__header-ava {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  background-image: url("../images/doctor-ava.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 15px;
+  border-radius: 50%;
+  border: 1px solid lightblue;
+}
+
+.main__doctor-card__header-ava .online__status-text {
+  color: #16395b;
+  font-size: 14px;
+  position: absolute;
+  bottom: -15px;
+  left: 11px;
+}
+
+.main__doctor-card__main {
+  padding: 25px 15px;
+}
+
+.main__doctor-card__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__doctor-card__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__doctor-card__item .number {
+  font-weight: 200;
+  text-align: right;
+  color: #0943bf;
+  font-size: 16px;
+}
+
+.main__doctor-card__item p {
+  color: #707070;
+  font-size: 13px;
+}
+
+.main__doctor-card__item .icon {
+  margin-left: 9px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #e4edfe;
+  background-image: url(../images/test.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+}
+
+.main__doctor-card__place {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main__doctor-card__place .address {
+  font-size: 14px;
+}
+
+.main__doctor-card__place p {
+  text-align: right;
+  color: #707070;
+  font-size: 13px;
+}
+
+.main__doctor-card__place .icon {
+  margin-left: 9px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #e4edfe;
+  background-image: url(../images/place-blue.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
 }
 
 .btn-active {
@@ -370,6 +547,7 @@ body {
 }
 
 .show {
+  margin-top: 30px;
   visibility: visible;
   height: 120px;
 }

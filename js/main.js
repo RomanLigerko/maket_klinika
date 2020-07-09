@@ -15,7 +15,8 @@ $(function(){
     
     });
     $('.main__info-button-1, .main__info-button-2, .main__info-button-4').on('click', function(){
-        $('.main__info-photos').removeClass('show');
+            $('.main__info-photos').removeClass('show');
+            $('.slick-slider').removeClass('show-slider');
     });
 
     $('.main__info-photos').slick({
@@ -23,8 +24,6 @@ $(function(){
         slidesToSckroll: 1,
         arrows: false,
         infinite: false,
-
-    //    swipe: false,
         // responsive:[
         //     {
         //         breakpoint: 1024,

@@ -230,10 +230,7 @@ body{
         background-position: center center;
     }
     &__info-photos{
-       max-width: 405px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        // height: 120px;
+        max-width: 405px;
     }
     .slick-slider{
         visibility: hidden;
@@ -280,8 +277,140 @@ body{
         }
     }
     &__doctor{
-        border: 1px solid red;
+        margin-top: 30px;
         height: 100px;
+    }
+    &__doctor-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & h3{
+            color: rgb(22, 57, 91);
+            font-weight: 100;
+            font-size: 24px;
+        }
+        & p{
+            color:$hover-color;
+            text-transform: uppercase;
+        }
+    }
+    &__doctor-card{
+        border: 1px solid lightblue;
+        border-radius: 6px;
+        margin-top: 20px;
+        background-color: #fff;
+    }
+    &__doctor-card__header{
+        margin-top: 20px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__doctor-card__header-btn{
+        position: absolute;
+        border-radius: 50%;
+        top:-5px;
+        width: 35px;
+        height: 35px;
+        left:15px;
+        background-image: url(../images/heart.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center center;
+        box-shadow: 0 2px 8px -4px rgba(0, 0, 0, 0.5);
+    }
+    &__doctor-card__header-info{
+        margin-top: -5px;
+        margin-right: 20px;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        & h4{
+            font-size: 18px;
+            max-width: 135px;
+            margin-bottom: 8px;
+        }
+        & p{
+            max-width: 215px;
+            color: $text-blue;
+            font-size: 14px;
+        }
+    }
+    &__doctor-card__header-ava{
+        position: relative;
+        width: 92px;
+        height: 92px;
+        background-image: url('../images/doctor-ava.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 15px;
+        border-radius: 50%;
+        border: 1px solid lightblue;
+        & .online__status-text{
+            color: #16395b;
+            font-size: 14px;
+            position: absolute;
+            bottom: -15px;
+            left:11px;
+        }
+    }
+    &__doctor-card__main{
+       padding: 25px 15px;
+    }
+    &__doctor-card__items{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__doctor-card__item{
+        display: flex;
+        & .number{
+            font-weight: 200;
+            text-align: right;
+            color: $text-blue;
+            font-size: 16px;
+        }
+        & p{
+            color: #707070;
+            font-size: 13px;
+        }
+        & .icon{
+            margin-left: 9px;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            background-color: rgb(228, 237, 254);
+            background-image: url(../images/test.svg);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center center;
+        }
+    }
+    &__doctor-card__place{
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+        & .address{
+            font-size: 14px;
+        }
+        & p{
+            text-align: right;
+            color: #707070;
+            font-size: 13px;
+        }
+        & .icon{
+            margin-left: 9px;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            background-color: rgb(228, 237, 254);
+            background-image: url(../images/place-blue.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center center;
+        }
     }
 
 }
@@ -289,9 +418,9 @@ body{
     background-color: $hover-color;
 }
 .show{
+    margin-top: 30px;
     visibility: visible;
     height: 120px;
-    // display: block;
 }
 .slick-dots button{
         display: none;
