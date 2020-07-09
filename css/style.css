@@ -25,6 +25,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+button {
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
 ul,
 li {
   margin: 0;
@@ -309,7 +317,7 @@ body {
   max-width: 405px;
 }
 
-.main .slick-slider {
+.main__info-photos.slick-slider {
   visibility: hidden;
   height: 0;
 }
@@ -360,7 +368,8 @@ body {
 
 .main__doctor {
   margin-top: 30px;
-  height: 100px;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .main__doctor-title {
@@ -459,16 +468,37 @@ body {
   border: 1px solid lightblue;
 }
 
+.main__doctor-card__header-ava .online__status {
+  border-radius: 50%;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  bottom: 2px;
+  left: 6px;
+  background-color: #fff;
+}
+
+.main__doctor-card__header-ava .online__status::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #06cf9a;
+  height: 9px;
+  width: 9px;
+  top: 21%;
+  left: 22%;
+}
+
 .main__doctor-card__header-ava .online__status-text {
   color: #16395b;
   font-size: 14px;
   position: absolute;
-  bottom: -15px;
+  bottom: -20px;
   left: 11px;
 }
 
 .main__doctor-card__main {
-  padding: 25px 15px;
+  padding: 30px 15px 0 15px;
 }
 
 .main__doctor-card__items {
@@ -521,10 +551,14 @@ body {
 }
 
 .main__doctor-card__place .address {
+  font-weight: 300;
+  margin-right: 25px;
   font-size: 14px;
 }
 
 .main__doctor-card__place p {
+  margin-top: 3px;
+  margin-right: 13px;
   text-align: right;
   color: #707070;
   font-size: 13px;
@@ -542,6 +576,69 @@ body {
   background-position: center center;
 }
 
+.main__doctor-card__service {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.main__doctor-card__service h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.main__doctor-card__service .consult {
+  color: #707070;
+  font-size: 14px;
+}
+
+.main__doctor-card__service .seans {
+  color: #707070;
+  font-size: 14px;
+}
+
+.main__doctor-card__service span {
+  font-weight: 200;
+  margin-left: 12px;
+  color: black;
+}
+
+.main__doctor-card__buttons {
+  padding: 35px 0 20px 0;
+  margin: 0 15px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__doctor-card__buttons button {
+  width: 165px;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid lightblue;
+  border-radius: 2em 2em 2em 2em !important;
+  background-color: #fff;
+}
+
+.main__doctor-card__buttons button:hover {
+  border: 1px solid #06cf9a;
+}
+
+.main__doctor-card__buttons button:active {
+  background-color: #06cf9a;
+}
+
 .btn-active {
   background-color: #06cf9a;
 }
@@ -552,7 +649,33 @@ body {
   height: 120px;
 }
 
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+}
+
+.slick-dots .slick-active button {
+  width: 24px;
+  background-color: #06cf9a;
+  border-radius: 5px 5px 5px 5px !important;
+}
+
 .slick-dots button {
-  display: none;
+  background-color: black;
+  font-size: 0;
+  border: none;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 7px;
 }
 /*# sourceMappingURL=style.css.map */

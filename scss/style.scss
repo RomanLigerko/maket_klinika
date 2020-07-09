@@ -17,6 +17,12 @@ html{
 h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
+button{
+    border: none;
+}
+button:focus{
+    outline: none;
+}
 ul,
 li{
     margin: 0;
@@ -231,10 +237,10 @@ body{
     }
     &__info-photos{
         max-width: 405px;
-    }
-    .slick-slider{
-        visibility: hidden;
-        height: 0;
+        &.slick-slider{
+            visibility: hidden;
+            height: 0;
+        }
     }
     .show-slider{
         visibility: visible;
@@ -278,7 +284,8 @@ body{
     }
     &__doctor{
         margin-top: 30px;
-        height: 100px;
+        margin-bottom: 30px;
+        position: relative;
     }
     &__doctor-title{
         display: flex;
@@ -348,16 +355,35 @@ body{
         margin-right: 15px;
         border-radius: 50%;
         border: 1px solid lightblue;
+        & .online__status{
+            border-radius: 50%;
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            bottom:2px;
+            left:6px;
+            background-color: #fff;
+            &::after{
+                content: "";
+                position: absolute;
+                border-radius: 50%;
+                background-color: $hover-color;
+                height: 9px;
+                width: 9px;
+                top:21%;
+                left:22%;
+            }
+        }
         & .online__status-text{
             color: #16395b;
             font-size: 14px;
             position: absolute;
-            bottom: -15px;
+            bottom: -20px;
             left:11px;
         }
     }
     &__doctor-card__main{
-       padding: 25px 15px;
+       padding: 30px 15px 0 15px;
     }
     &__doctor-card__items{
         display: flex;
@@ -393,9 +419,13 @@ body{
         display: flex;
         justify-content: flex-end;
         & .address{
+            font-weight: 300;
+            margin-right: 25px;
             font-size: 14px;
         }
         & p{
+            margin-top: 3px;
+            margin-right: 13px;
             text-align: right;
             color: #707070;
             font-size: 13px;
@@ -412,6 +442,51 @@ body{
             background-position: center center;
         }
     }
+    &__doctor-card__service{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        & h3{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .consult{
+            color: #707070;
+            font-size: 14px;
+        }
+        .seans{
+            color: #707070;
+            font-size: 14px;
+        }
+        span{
+            font-weight: 200;
+            margin-left: 12px;
+            color: black;
+        }
+    }
+    &__doctor-card__buttons{
+        padding: 35px 0 20px 0;
+        margin: 0 15px 0 15px;
+        display: flex;
+        justify-content: space-between;
+        & button{
+            width: 165px;
+            height: 40px;
+            align-items: center;
+            border: 1px solid lightblue;
+            border-radius: 2em 2em 2em 2em !important;
+            background-color: #fff;
+        }
+        & button:hover{
+            border: 1px solid $hover-color;
+
+        }
+        & button:active{
+            background-color: $hover-color;
+        }
+       
+    }
 
 }
 .btn-active{
@@ -422,6 +497,28 @@ body{
     visibility: visible;
     height: 120px;
 }
-.slick-dots button{
-        display: none;
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -30px;
+    left:0;
+    right: 0;
+    .slick-active{
+        button{
+            width: 24px;
+            background-color: $hover-color;
+            border-radius: 5px 5px 5px 5px !important;
+        }
+    }
+    button{
+        background-color: black;
+        font-size:0;
+        border:none;
+        padding: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0 7px;
+    }
 }

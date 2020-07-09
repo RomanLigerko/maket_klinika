@@ -20,24 +20,16 @@ $(function(){
     });
 
     $('.main__info-photos').slick({
+        dots:false,
         slidesToShow: 2.5,
         slidesToSckroll: 1,
         arrows: false,
         infinite: false,
-        // responsive:[
-        //     {
-        //         breakpoint: 1024,
-        //         settings: {
-
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 640,
-        //         settings: {
-        //             arrows: false   
-
-        //         }
-        //     }
-        // ]
     });
+    $('.card__slider').slick({
+        dots: true,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToSckroll: 1,
+    })
 });
