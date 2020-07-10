@@ -1,7 +1,7 @@
 $(function(){
     $('.main__info-button-3').on('click', function(){
         $('.main__info-photos').toggleClass('show');
-        $('.slick-slider').toggleClass('show-slider');
+        $('#slider').toggleClass('show-slider');
     });
       
     $('.main__info-button').on('click', function(){
