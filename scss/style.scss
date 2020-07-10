@@ -2,6 +2,7 @@
 @import 'fonts';
 @import 'global';
 
+
 html{
     box-sizing: border-box;
 }
@@ -243,7 +244,7 @@ body{
         background-position: center center;
     }
     &__info-photos{
-        max-width: 405px;
+        // max-width: 405px;
         &.slick-slider{
             visibility: hidden;
             height: 0;
@@ -509,6 +510,7 @@ body{
     }
 
 }
+
 // .card__slider{
 //     w400
 // }
@@ -696,3 +698,6 @@ body{
         }
     }
 }
+
+
+@import 'media';

@@ -25,6 +25,27 @@ $(function(){
         slidesToSckroll: 1,
         arrows: false,
         infinite: false,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 414,
+                settings: {
+                    slidesToShow: 2.5,
+                }
+            }
+        ]
+
     });
     $('.card__slider').slick({
         dots: true,

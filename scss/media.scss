@@ -1,0 +1,150 @@
+@media(min-width:580px){
+    .main{
+        &__info-img{
+            height: 250px;
+        }
+        &__info-item{
+            margin-bottom: 9px;
+        }
+        &__info-buttons{
+            margin-top: 20px;
+        }
+        &__info-button-1{
+            width: 190px;
+        }
+        &__info-button-2{
+            width: 160px;
+        }
+        &__info-button-3{
+            width: 120px;
+        }
+      
+    }
+    .footer{
+        &__info{
+            padding-top: 125px;
+        }
+        &__logo{
+            margin-top: 20px;
+        }
+        &__addition{
+            margin-top: 20px;
+        }
+    }
+}
+@media(min-width:700px){
+    .main{
+        &__info-img{
+            height: 300px;
+            &__logo{
+                top:-14%;
+            }
+        }
+        &__info-button-1{
+            width: 210px;
+        }
+        &__info-button-2{
+            width: 180px;
+        }
+        &__info-button-3{
+            width: 140px;
+        }
+        &__doctor-card__main{
+            padding-top: 50px;
+        }
+        &__doctor-card__service{
+            margin-top: 50px;
+        }
+        &__doctor-card__buttons{
+            justify-content: space-around;
+            & button{
+                width: 200px;
+            }
+        }
+        &__doctor-card__inner{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__doctor-card__items{
+            width: 50%;
+            justify-content: space-between;
+        }
+        &__doctor-card__header{
+            h4{
+                max-width: 220px;
+            }
+        }
+    }
+    .footer{
+        &__info{
+            justify-content: space-between;
+        }
+        &__info-contacts{
+        text-align: right;
+            & h3 {
+                margin-right: 20px;              
+            }
+            &__email{
+                margin-right: 20px;
+            }
+            &__soc{
+                justify-content: flex-end;
+            }
+        }
+        &__inner{
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        &__signup, &__language{
+            width: 45%;
+           
+        }
+        &__language{
+            text-align: right;
+            margin-top: 43px;
+            margin-right: 20px;
+        }
+        &__logo{
+            margin-top: 50px;
+        }
+        &__addition{
+            margin-top: 50px;
+        }
+    }
+}
+@media(min-width:1024px){
+    .main{
+      
+        display: flex;
+        justify-content: space-around;
+            &__info{
+                width: 45%;
+                margin-top: 50px;
+            }
+            &__info-img{
+                height: 312px;
+            }
+            &__info-button-1{
+                width: 160px;
+            }
+            &__info-button-2{
+                width: 130px;
+            }
+            &__info-button-3{
+                width: 90px;
+            }
+            &__doctor-card__inner{
+                display: flex;
+                flex-direction: column;
+            }
+            
+            &__doctor-card__items{
+                width: 100%;
+            }
+            &__doctor{
+                width: 500px;
+                margin-top: 0;
+            }
+        }
+}   

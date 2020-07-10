@@ -320,10 +320,6 @@ body {
   background-position: center center;
 }
 
-.main__info-photos {
-  max-width: 405px;
-}
-
 .main__info-photos.slick-slider {
   visibility: hidden;
   height: 0;
@@ -887,5 +883,166 @@ body {
 .footer__addition p {
   cursor: pointer;
   text-decoration: underline;
+}
+
+@media (min-width: 580px) {
+  .main__info-img {
+    height: 250px;
+  }
+  .main__info-item {
+    margin-bottom: 9px;
+  }
+  .main__info-buttons {
+    margin-top: 20px;
+  }
+  .main__info-button-1 {
+    width: 190px;
+  }
+  .main__info-button-2 {
+    width: 160px;
+  }
+  .main__info-button-3 {
+    width: 120px;
+  }
+  .footer__info {
+    padding-top: 125px;
+  }
+  .footer__logo {
+    margin-top: 20px;
+  }
+  .footer__addition {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  .main__info-img {
+    height: 300px;
+  }
+  .main__info-img__logo {
+    top: -14%;
+  }
+  .main__info-button-1 {
+    width: 210px;
+  }
+  .main__info-button-2 {
+    width: 180px;
+  }
+  .main__info-button-3 {
+    width: 140px;
+  }
+  .main__doctor-card__main {
+    padding-top: 50px;
+  }
+  .main__doctor-card__service {
+    margin-top: 50px;
+  }
+  .main__doctor-card__buttons {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .main__doctor-card__buttons button {
+    width: 200px;
+  }
+  .main__doctor-card__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main__doctor-card__items {
+    width: 50%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main__doctor-card__header h4 {
+    max-width: 220px;
+  }
+  .footer__info {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__info-contacts {
+    text-align: right;
+  }
+  .footer__info-contacts h3 {
+    margin-right: 20px;
+  }
+  .footer__info-contacts__email {
+    margin-right: 20px;
+  }
+  .footer__info-contacts__soc {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .footer__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__signup, .footer__language {
+    width: 45%;
+  }
+  .footer__language {
+    text-align: right;
+    margin-top: 43px;
+    margin-right: 20px;
+  }
+  .footer__logo {
+    margin-top: 50px;
+  }
+  .footer__addition {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .main__info {
+    width: 45%;
+    margin-top: 50px;
+  }
+  .main__info-img {
+    height: 312px;
+  }
+  .main__info-button-1 {
+    width: 160px;
+  }
+  .main__info-button-2 {
+    width: 130px;
+  }
+  .main__info-button-3 {
+    width: 90px;
+  }
+  .main__doctor-card__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__doctor-card__items {
+    width: 100%;
+  }
+  .main__doctor {
+    width: 500px;
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
