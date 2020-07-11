@@ -2,7 +2,8 @@ $(function(){
     $('#hideSliderBtn').on('click', function(){
         $(this).css('display', 'none');
         $('#showSliderBtn').css('display', 'block');
-        $('.card__slider').css('display', 'none');
+        $('.card__slider').css('height', '0');
+        $('.card__slider').css('visibility', 'hidden');
         $('.card__container').css('display', 'flex');
         $('.card__container').css('flex-wrap', 'wrap');
 
@@ -12,7 +13,9 @@ $(function(){
     $('#showSliderBtn').on('click', function(){
         $(this).css('display', 'none');
         $('#hideSliderBtn').css('display', 'block');
-        $('.card__slider').css('display', 'block');
+        // $('.card__slider').css('display', 'block');
+        $('.card__slider').css('height', '100%');
+        $('.card__slider').css('visibility', 'visible');
         $('.card__container').css('display', 'none');
     });
 
