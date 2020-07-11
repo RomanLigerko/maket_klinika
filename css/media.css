@@ -1,6 +1,12 @@
+@media (min-width: 520px) {
+  .main__info-img {
+    height: 240px;
+  }
+}
+
 @media (min-width: 580px) {
   .main__info-img {
-    height: 250px;
+    height: 280px;
   }
   .main__info-item {
     margin-bottom: 9px;
@@ -8,14 +14,9 @@
   .main__info-buttons {
     margin-top: 20px;
   }
-  .main__info-button-1 {
-    width: 190px;
-  }
-  .main__info-button-2 {
-    width: 160px;
-  }
-  .main__info-button-3 {
-    width: 120px;
+  .card__container .main__doctor-card {
+    margin: 20px 20px;
+    width: 100%;
   }
   .footer__info {
     padding-top: 125px;
@@ -28,21 +29,29 @@
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 630px) {
   .main__info-img {
-    height: 300px;
+    height: 310px;
   }
-  .main__info-img__logo {
-    top: -14%;
+}
+
+@media (min-width: 680px) {
+  .main__info-img {
+    height: 350px;
   }
-  .main__info-button-1 {
-    width: 210px;
+}
+
+@media (min-width: 700px) {
+  .header {
+    padding-left: 25px;
+    padding-right: 25px;
   }
-  .main__info-button-2 {
-    width: 180px;
+  .main {
+    padding-left: 25px;
+    padding-right: 25px;
   }
-  .main__info-button-3 {
-    width: 140px;
+  .main__info-img {
+    height: 400px;
   }
   .main__doctor-card__main {
     padding-top: 50px;
@@ -57,22 +66,8 @@
   .main__doctor-card__buttons button {
     width: 200px;
   }
-  .main__doctor-card__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .main__doctor-card__items {
-    width: 50%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .main__doctor-card__header h4 {
-    max-width: 220px;
+  .main__doctor-card__header-info {
+    margin-left: 5px;
   }
   .footer__info {
     -webkit-box-pack: justify;
@@ -101,6 +96,9 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .footer__signup {
+    max-width: 350px;
+  }
   .footer__signup, .footer__language {
     width: 45%;
   }
@@ -117,45 +115,101 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+@media (min-width: 762px) {
+  .header {
+    position: relative;
   }
-  .main__info {
-    width: 45%;
-    margin-top: 50px;
+  .header__search {
+    display: none;
+  }
+  .header__search-desctop {
+    display: block;
   }
   .main__info-img {
-    height: 312px;
+    height: 440px;
   }
-  .main__info-button-1 {
-    width: 160px;
+  .main__doctor-card__place .address {
+    margin-right: 5px;
   }
-  .main__info-button-2 {
-    width: 130px;
+}
+
+@media (min-width: 780px) {
+  .main__info-img {
+    height: 450px;
   }
-  .main__info-button-3 {
-    width: 90px;
+  .card__container .main__doctor-card {
+    margin: 10px auto;
+    width: 45%;
   }
-  .main__doctor-card__inner {
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .main {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .main__info-img {
+    height: 500px;
+  }
+  .card__container {
+    margin-left: 10px;
+  }
+  .card__container .main__doctor-card {
+    margin: 20px 20px;
+    width: 45%;
+  }
+  .footer__info {
+    padding-top: 195px;
+  }
+  .footer__inner-addition {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .main__doctor-card__items {
-    width: 100%;
+  .footer__addition p {
+    margin-right: 15px;
   }
-  .main__doctor {
-    width: 500px;
-    margin-top: 0;
+}
+
+@media (min-width: 1300px) {
+  .main__doctor-card__header h4 {
+    max-width: 220px;
+  }
+}
+
+@media (min-width: 1365px) {
+  .main__info-img {
+    height: 600px;
+  }
+  .main__info {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .main__doctor-title {
+    margin: 0 30px;
+  }
+  .card__container {
+    margin-left: 10px;
+  }
+  .card__container .main__doctor-card {
+    margin: 20px 20px;
+    width: 30%;
+  }
+}
+
+@media (min-width: 1470px) {
+  .card__container {
+    margin-left: 20px;
   }
 }
 /*# sourceMappingURL=media.css.map */

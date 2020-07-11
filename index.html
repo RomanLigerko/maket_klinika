@@ -17,6 +17,9 @@
         <img src="images/logo-video.png" alt="">
       </div>
       <div class="header__main-inner">
+        <div class="header__search-desctop">
+          <input type="text" class="header__search-input" value="Шукати фахівця, клініку, послугу...">
+        </div>
         <div class="header__main-inner__email">
           <img src="images/email.svg" alt="">
           <div class="notification notification__email">12</div>  
@@ -89,6 +92,18 @@
         <div class="main__info-photo">
           <img src="images/image-2.png" alt="" >
         </div>
+        <div class="main__info-photo">
+          <img src="images/image-1.png" alt="" >
+        </div>
+        <div class="main__info-photo">
+          <img src="images/image-2.png" alt="" >
+        </div>
+        <div class="main__info-photo">
+          <img src="images/image-1.png" alt="" >
+        </div>
+        <div class="main__info-photo">
+          <img src="images/image-2.png" alt="" >
+        </div>
         <div class="main__info-photo main__info-photo__last">
           <img src="images/image-3.png" alt="" >
           <div class="blackout"></div>
@@ -100,9 +115,10 @@
     <div class="main__doctor">
       <div class="main__doctor-title">
         <h3>Лікарі закладу</h3>
-        <p>Всі лікарі</p>
+        <p id="hideSliderBtn">Всі лікарі</p>
+        <p id="showSliderBtn">Сховати</p>
       </div>
-      <div class="card__slider">
+      <div class="card__slider" id="sliderCard">
       <div class="main__doctor-card">
         <div class="main__doctor-card__header">
           <div class="main__doctor-card__header-btn"></div>
@@ -336,6 +352,240 @@
         </div>
       </div>
 
+    </div>
+    <div class="card__container">
+      <div class="main__doctor-card">
+        <div class="main__doctor-card__header">
+          <div class="main__doctor-card__header-btn"></div>
+          <div class="main__doctor-card__header-info">
+            <h4>Іванов Олексій Вікторович</h4>
+            <p>Інфекціоніст, Лікар-нарколог дільничий,
+              Ще якась спеціальність цього лікаря
+            </p>
+          </div>
+          <div class="main__doctor-card__header-ava">
+            <div class="online__status"></div>
+            <div class="online__status-text">Доступний</div>
+          </div>
+        </div>
+        <div class="main__doctor-card__main">
+          <div class="main__doctor-card__inner">
+          <div class="main__doctor-card__items">
+            <div class="main__doctor-card__item">
+              <div class="text">
+                <div class="number">4,9</div>
+                <p>Рейтинг</p>
+              </div>
+              <div class="icon"></div>
+            </div>
+            <div class="main__doctor-card__item">
+              <div class="text">
+                <div class="number">123</div>
+                <p>Відгуків</p>
+              </div>
+              <div class="icon"></div>
+            </div>
+            <div class="main__doctor-card__item">
+              <div class="text">
+                <div class="number">14</div>
+                <p>Послуг</p>
+              </div>
+              <div class="icon"></div>
+            </div>
+          </div>
+          <div class="main__doctor-card__place">
+            <div class="text">
+              <div class="address">м. Луцьк, пр. Соборності 89, каб. 412</div>
+              <p>Луцька міська клінічна лікарня</p>
+            </div>
+            <div class="icon"></div>
+          </div>
+        </div>
+          <div class="main__doctor-card__service">
+            <h3>Послуги та ціни:</h3>
+            <p class="consult">Консультація  <span class="price"> - від 100 грн</span> </p>
+            <p class="seans">Сеанс терапії  <span class="price"> - від 300 грн</span> </p>
+          </div>
+        </div>
+        <div class="main__doctor-card__buttons">
+            <button class="card__btn-1">Написати</button>
+            <button class="card__btn-2">Сторінка лікаря</button>
+        </div>
+      </div>
+      <div class="main__doctor-card">
+        <div class="main__doctor-card__header">
+          <div class="main__doctor-card__header-btn"></div>
+          <div class="main__doctor-card__header-info">
+            <h4>Іванов Олексій Вікторович</h4>
+            <p>Інфекціоніст, Лікар-нарколог дільничий,
+              Ще якась спеціальність цього лікаря
+            </p>
+          </div>
+          <div class="main__doctor-card__header-ava">
+            <div class="online__status"></div>
+            <div class="online__status-text">Доступний</div>
+          </div>
+        </div>
+        <div class="main__doctor-card__main">
+          <div class="main__doctor-card__inner">
+          <div class="main__doctor-card__items">
+            <div class="main__doctor-card__item">
+              <div class="text">
+                <div class="number">4,9</div>
+                <p>Рейтинг</p>
+              </div>
+              <div class="icon"></div>
+            </div>
+            <div class="main__doctor-card__item">
+              <div class="text">
+                <div class="number">123</div>
+                <p>Відгуків</p>
+              </div>
+              <div class="icon"></div>
+            </div>
+            <div class="main__doctor-card__item">
+              <div class="text">
+                <div class="number">14</div>
+                <p>Послуг</p>
+              </div>
+              <div class="icon"></div>
+            </div>
+          </div>
+          <div class="main__doctor-card__place">
+            <div class="text">
+              <div class="address">м. Луцьк, пр. Соборності 89, каб. 412</div>
+              <p>Луцька міська клінічна лікарня</p>
+            </div>
+            <div class="icon"></div>
+          </div>
+        </div>
+          <div class="main__doctor-card__service">
+            <h3>Послуги та ціни:</h3>
+            <p class="consult">Консультація  <span class="price"> - від 100 грн</span> </p>
+            <p class="seans">Сеанс терапії  <span class="price"> - від 300 грн</span> </p>
+          </div>
+        </div>
+        <div class="main__doctor-card__buttons">
+            <button class="card__btn-1">Написати</button>
+            <button class="card__btn-2">Сторінка лікаря</button>
+        </div>
+      </div>
+      <div class="main__doctor-card">
+        <div class="main__doctor-card__header">
+          <div class="main__doctor-card__header-btn"></div>
+          <div class="main__doctor-card__header-info">
+            <h4>Іванов Олексій Вікторович</h4>
+            <p>Інфекціоніст, Лікар-нарколог дільничий,
+              Ще якась спеціальність цього лікаря
+            </p>
+          </div>
+          <div class="main__doctor-card__header-ava">
+            <div class="online__status"></div>
+            <div class="online__status-text">Доступний</div>
+          </div>
+        </div>
+        <div class="main__doctor-card__main">
+          <div class="main__doctor-card__inner">
+          <div class="main__doctor-card__items">
+            <div class="main__doctor-card__item">
+              <div class="text">
+                <div class="number">4,9</div>
+                <p>Рейтинг</p>
+              </div>
+              <div class="icon"></div>
+            </div>
+            <div class="main__doctor-card__item">
+              <div class="text">
+                <div class="number">123</div>
+                <p>Відгуків</p>
+              </div>
+              <div class="icon"></div>
+            </div>
+            <div class="main__doctor-card__item">
+              <div class="text">
+                <div class="number">14</div>
+                <p>Послуг</p>
+              </div>
+              <div class="icon"></div>
+            </div>
+          </div>
+          <div class="main__doctor-card__place">
+            <div class="text">
+              <div class="address">м. Луцьк, пр. Соборності 89, каб. 412</div>
+              <p>Луцька міська клінічна лікарня</p>
+            </div>
+            <div class="icon"></div>
+          </div>
+        </div>
+          <div class="main__doctor-card__service">
+            <h3>Послуги та ціни:</h3>
+            <p class="consult">Консультація  <span class="price"> - від 100 грн</span> </p>
+            <p class="seans">Сеанс терапії  <span class="price"> - від 300 грн</span> </p>
+          </div>
+        </div>
+        <div class="main__doctor-card__buttons">
+            <button class="card__btn-1">Написати</button>
+            <button class="card__btn-2">Сторінка лікаря</button>
+        </div>
+      </div>
+      <div class="main__doctor-card">
+        <div class="main__doctor-card__header">
+          <div class="main__doctor-card__header-btn"></div>
+          <div class="main__doctor-card__header-info">
+            <h4>Іванов Олексій Вікторович</h4>
+            <p>Інфекціоніст, Лікар-нарколог дільничий,
+              Ще якась спеціальність цього лікаря
+            </p>
+          </div>
+          <div class="main__doctor-card__header-ava">
+            <div class="online__status"></div>
+            <div class="online__status-text">Доступний</div>
+          </div>
+        </div>
+        <div class="main__doctor-card__main">
+          <div class="main__doctor-card__inner">
+          <div class="main__doctor-card__items">
+            <div class="main__doctor-card__item">
+              <div class="text">
+                <div class="number">4,9</div>
+                <p>Рейтинг</p>
+              </div>
+              <div class="icon"></div>
+            </div>
+            <div class="main__doctor-card__item">
+              <div class="text">
+                <div class="number">123</div>
+                <p>Відгуків</p>
+              </div>
+              <div class="icon"></div>
+            </div>
+            <div class="main__doctor-card__item">
+              <div class="text">
+                <div class="number">14</div>
+                <p>Послуг</p>
+              </div>
+              <div class="icon"></div>
+            </div>
+          </div>
+          <div class="main__doctor-card__place">
+            <div class="text">
+              <div class="address">м. Луцьк, пр. Соборності 89, каб. 412</div>
+              <p>Луцька міська клінічна лікарня</p>
+            </div>
+            <div class="icon"></div>
+          </div>
+        </div>
+          <div class="main__doctor-card__service">
+            <h3>Послуги та ціни:</h3>
+            <p class="consult">Консультація  <span class="price"> - від 100 грн</span> </p>
+            <p class="seans">Сеанс терапії  <span class="price"> - від 300 грн</span> </p>
+          </div>
+        </div>
+        <div class="main__doctor-card__buttons">
+            <button class="card__btn-1">Написати</button>
+            <button class="card__btn-2">Сторінка лікаря</button>
+        </div>
+      </div>
     </div>
       
 
@@ -386,14 +636,16 @@
         </select>
       </div>
     </div>
-    <div class="footer__logo">
-      <img src="images/logo-footer.png" alt="">
-      <p>2019 <b> MoniHeal</b>. Medical Online Information System</p>
-    </div>
-    <div class="footer__addition">
-      <p>Захист данних</p>
-      <p>Політика приватності</p>
-      <p>Правила користування</p>
+    <div class="footer__inner-addition">
+      <div class="footer__logo">
+        <img src="images/logo-footer.png" alt="">
+        <p>2019 <b> MoniHeal</b>. Medical Online Information System</p>
+      </div>
+      <div class="footer__addition">
+        <p>Захист данних</p>
+        <p>Політика приватності</p>
+        <p>Правила користування</p>
+      </div>
     </div>
   </footer>
   
